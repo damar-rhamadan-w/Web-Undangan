@@ -1,0 +1,715 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Italianno', cursive;
+    color: #ff9f1c;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+    background-image: url('/assets/img/subtle-pattern.png');
+    background-repeat: repeat;
+  }
+  
+  /* Navigation Styles */
+  .navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navigation ul li {
+    margin: 10px;
+  }
+  
+  .navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+  }
+  
+  .navigation ul li a:hover {
+    background-color: #ff9f1c;
+    color: white;
+  }
+  
+ 
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+
+  #cover {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: url('../img/purple.jpeg');
+    position: relative;
+  }
+  
+  #cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .cover-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cover-content h1 {
+    font-size: 5em;
+    margin-bottom: 0.2em;
+  }
+  
+  .cover-content h2 {
+    font-size: 3em;
+    margin-top: 0.2em;
+  }
+  
+  .cover-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .buka-undangan {
+    padding: 15px 30px;
+    background-color: #ff9f1c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buka-undangan:hover {
+    background-color: #ff7518;
+  }
+  
+  .cover-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+
+  #quotes {
+    background-image: url('../img/purple.jpeg');
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .quote {
+    font-size: 1.5em;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .music-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .music-button:hover {
+    background-color: white;
+    color: #ff9f1c;
+  }
+  
+  .quotes-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+
+  #profil {
+    background-color: #f9f9f9;
+  }
+  
+  .pengantin {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .profil-item {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profil-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: #ff9f1c;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ff7518;
+  }
+  
+  /* Tanggal & Lokasi Section */
+  #tanggal-lokasi {
+    background-image: url('../img/purple.jpeg');
+    color: white;
+    text-align: center;
+  }
+  
+  .event-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .event-item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .event-item i {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .location {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .map-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .map-link:hover {
+    background-color: white;
+    color: #ff9f1c;
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    background-color: #f9f9f9;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .gallery-item {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0. 3s ease;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .gallery-item:hover .image-overlay {
+    height: 100%;
+  }
+  
+  .gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+  }
+  
+  .image-overlay p {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .video-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .video-container video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  #story {
+    background-image: url('../img/purple.jpeg');
+    color: white;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #ff9f1c;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+  }
+  
+  .timeline-item:nth-child(even)::after {
+    left: -16px;
+  }
+  
+  .timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    color: #333;
+  }
+  
+  /* Parallax background */
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Timeline styling */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .timeline-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 90%;
+    }
+  }
+  
+  /* Tamu Khusus Section */
+  #tamu-khusus td {
+    text-align: center; /* Menengahkan teks di dalam kolom */
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+  
+#tamu-khusus table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tamu-khusus th, #tamu-khusus td {
+  text-align: center; /* Tengahkan teks secara horizontal */
+  vertical-align: middle; /* Tengahkan teks secara vertikal */
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+#tamu-khusus th {
+  background-color: #ff9f1c;
+  color: white;
+}
+
+#tamu-khusus th[rowspan="2"] {
+  vertical-align: middle; /* Pusatkan teks untuk th dengan rowspan */
+  text-align: center;
+}
+
+  
+  /* RSVP Section */
+  #rsvp {
+    background-color: #f9f9f9;
+  }
+  
+  #rsvp-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .radio-group, .checkbox-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .submit-btn {
+    background-color: #ff9f1c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff7518;
+  }
+  
+  /* Kirim Hadiah Section */
+  #kirim-hadiah {
+    background-image: url('../img/purple.jpeg');
+    color: white;
+    text-align: center;
+  }
+  
+  .bank-details {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .copy-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .copy-btn:hover {
+    background-color: white;
+    color: #ff9f1c;
+  }
+  
+  .qr-code {
+    margin: 20px 0;
+  }
+  
+  .qr-code img {
+    max-width: 200px;
+  }
+  
+  /* Pesan Section */
+  #pesan {
+    background-color: #f9f9f9;
+  }
+  
+  #pesan-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #pesan-list {
+    margin-top: 40px;
+  }
+  
+  /* Terima Kasih Section */
+  #terima-kasih {
+    background-image: url('../img/purple.jpeg');
+    color: white;
+    text-align: center;
+  }
+  
+  .hearts {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .hearts i {
+    color: #ff9f1c;
+    margin: 0 10px;
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navigation ul {
+      flex-direction: column;
+    }
+  
+    .profil-item, .event-item, .gallery-item {
+      width: 100%;
+    }
+  
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .timeline-item::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    .timeline-item::after {
+      left: 15px;
+    }
+  
+    .timeline-item:nth-child(even) {
+
+        left: 0%;
+    }
+  }
+  
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .delay-2s {
+    animation-delay: 2s;
+  }
+  
+  .delay-3s {
+    animation-delay: 3 s;
+  }
+  #kotak-musik {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#tombol-musik {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#tombol-musik:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+#kontrol {
+    width: 30px;
+    height: 30px;
+}
+

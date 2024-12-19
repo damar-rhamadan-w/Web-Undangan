@@ -1,0 +1,122 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/foto1.jpeg');
+}
+
+body {
+  background-image: url('../img/foto1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cover {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cover-content {
+  padding: 20px;
+}
+
+.cover-title {
+  font-family: 'Italianno', cursive;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ff8400;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cover-subtitle {
+  font-family: 'Italianno', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff8400;;
+}
+
+.cover-text {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cover-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff8400;;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cover-button:hover {
+  background-color: #ff8400;;
+}
+.pos-tl{
+  position: absolute;
+  top:-200px;
+  left: -200px;
+}
+
+.pos-tr{
+  position: absolute;
+  top:-200px;
+  right: -200px;
+}
+
+.pos-bl{
+  position: absolute;
+  bottom:-200px;
+  left: -200px;
+}
+
+.pos-br{
+  position: absolute;
+  bottom:-200px;
+  right: -200px;
+}
+
+#kotak-musik{
+  display: none;
+}
+
+
+
+
+
+#tombol-musik{
+  
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: blue;
+  border-radius: 100%;
+  padding:50px;
+}
+
+#tombol-musik img{
+
+  width:18vh;
+
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
